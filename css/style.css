@@ -10,16 +10,27 @@ body {
   text-decoration: none;
 }
 
-/* ========HEADER--------------------- */
-.header {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
-.header_link_logo {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+/* ========HEADER--------------------- */
+.header_link_logo {
   color: #212121;
 }
 .header_link_logo:hover,
@@ -82,9 +93,7 @@ body {
 /* --------MAIN----------------------- */
 
 /* --------ABOUT----------------------- */
-.section_about_title {
-  display: none;
-}
+
 .section_about_subtitle {
   font-size: 14px;
   line-height: 1.14;
@@ -145,11 +154,6 @@ body {
 }
 
 .footer_link_logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 .section_footer_map {
