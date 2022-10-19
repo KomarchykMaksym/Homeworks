@@ -2,13 +2,34 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 :root {
   --main_color: #212121;
   --text_color: #757575;
   --active_color: #2196f3;
   --sub_color: #ffffff;
+  --typical_padding: 94px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 .list {
@@ -19,6 +40,12 @@ body {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -39,8 +66,24 @@ body {
 }
 
 /* ========HEADER--------------------- */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+}
 .header_link_logo {
   color: var(--main_color);
+  margin-right: 93px;
 }
 .logo_color {
   color: var(--active_color);
@@ -48,6 +91,12 @@ body {
 .header_link_logo:hover,
 .header_link_logo:focus {
   color: var(--active_color);
+}
+
+.header_list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
 }
 
 .header_list_link {
@@ -58,9 +107,15 @@ body {
 }
 
 .header_list_link:hover,
-.header_list_link:focus,
-.header_list_link:active {
+.header_list_link:focus {
   color: var(--active_color);
+}
+.header_list .header_list_link.current {
+  color: var(--active_color);
+}
+
+.header_contacts {
+  margin-left: auto;
 }
 
 .header_mail,
@@ -81,9 +136,12 @@ body {
 /* -------HEADER--------------------- */
 
 /* --------MAIN----------------------- */
-
-.main_section_title {
+.main_section {
   background-color: #2f303a;
+  padding-top: var(--typical_padding);
+  padding-bottom: var(--typical_padding);
+}
+.main_section_title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -91,6 +149,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--sub_color);
+  margin-bottom: 30px;
 }
 
 .main_section_btn {
@@ -102,9 +161,14 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--main_color);
-  background: #2196f3;
+  color: var(--sub_color);
+  background: var(--active_color);
   cursor: pointer;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 220px;
+  height: 30px;
 }
 .main_section_btn:hover,
 .main_section_btn:focus {
@@ -113,38 +177,82 @@ body {
 /* --------MAIN----------------------- */
 
 /* --------ABOUT----------------------- */
+.section_about {
+  padding-top: var(--typical_padding);
+  padding-bottom: var(--typical_padding);
+}
+
+.section_about_list {
+  display: flex;
+  gap: 30px;
+}
 
 .section_about_subtitle {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main_color);
+  margin-bottom: 10px;
 }
 
 .section_about_text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--text_color);
+  max-width: 270px;
 }
 
 /* --------ABOUT----------------------- */
 
 /* --------WORK----------------------- */
+.section_work {
+  padding-top: var(--typical_padding);
+  padding-bottom: var(--typical_padding);
+}
+
 .section_work_title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: var(--main_color);
+  margin-bottom: 50px;
+}
+
+.section_work_list {
+  display: flex;
+  gap: 30px;
+}
+
+.section_work_item {
+  width: calc((100%-60px) / 3);
 }
 /* --------WORK----------------------- */
 
 /* --------TEAM----------------------- */
+.section_team {
+  padding-top: var(--typical_padding);
+  padding-bottom: var(--typical_padding);
+}
+
+.section_team_list {
+  display: flex;
+  gap: 30px;
+}
+
+.section_team_item {
+  width: calc((100%-90px) / 4);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .section_team_title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   color: var(--main_color);
+  margin-bottom: 50px;
 }
 
 .section_team_subtitle {
@@ -153,6 +261,8 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--main_color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .section_team_text {
@@ -160,16 +270,23 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--text_color);
+  margin-bottom: 30px;
 }
 /* --------TEAM----------------------- */
 /* --------FOOTER--------------------- */
+
 .section_footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer_link_logo {
+  display: inline-block;
   color: var(--sub_color);
+  margin-bottom: 20px;
 }
+
 .section_footer_map {
   font-style: normal;
   font-weight: 400;
@@ -194,6 +311,17 @@ body {
 /* --------FOOTER--------------------- */
 
 /* --------PORTFOLIO----------------- */
+.portfolio {
+  padding-top: var(--typical_padding);
+  padding-bottom: var(--typical_padding);
+}
+.portfolio_filter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+
 .portfolio_btn {
   font-family: inherit;
   font-weight: 500;
@@ -209,16 +337,42 @@ body {
   background-color: var(--active_color);
   color: var(--sub_color);
 }
+
+.portfolio_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio_list .portfolio_gallery .portfolio_subtitle {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+.portfolio_list .portfolio_gallery .portfolio_text {
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.portfolio_gallery {
+  width: calc((100% - 60px) / 3);
+}
+
 .portfolio_subtitle {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main_color);
+  padding-top: 20px;
+  padding-left: 24px;
+  margin-bottom: 4px;
 }
+
 .portfolio_text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text_color);
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 /* --------PORTFOLIO----------------- */
