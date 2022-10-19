@@ -40,6 +40,9 @@ img {
   text-decoration: none;
 }
 
+.section {
+  width: 1600px;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -115,6 +118,7 @@ img {
 }
 
 .header_contacts {
+  display: flex;
   margin-left: auto;
 }
 
@@ -124,6 +128,29 @@ img {
   line-height: 1.13;
   letter-spacing: 0.02em;
   color: var(--text_color);
+}
+
+.header_mail:before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../image/icon-mail.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.header_tel::before {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../image/icon-phone.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header_mail:hover,
@@ -137,7 +164,14 @@ img {
 
 /* --------MAIN----------------------- */
 .main_section {
-  background-color: #2f303a;
+  width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/fone-hero.jpg);
   padding-top: var(--typical_padding);
   padding-bottom: var(--typical_padding);
 }
@@ -165,10 +199,10 @@ img {
   background: var(--active_color);
   cursor: pointer;
   margin: 0 auto;
+  min-width: 216px;
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  min-width: 220px;
-  height: 30px;
 }
 .main_section_btn:hover,
 .main_section_btn:focus {
@@ -185,6 +219,30 @@ img {
 .section_about_list {
   display: flex;
   gap: 30px;
+}
+
+.section_about_item::before {
+  display: block;
+  height: 120px;
+  content: "";
+  background-color: #f5f4fa;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-antena::before {
+  background-image: url(../image/icon-antena.png);
+}
+.icon-clock::before {
+  background-image: url(../image/icon-clock.png);
+}
+
+.icon-diagram::before {
+  background-image: url(../image/icon-diagram.png);
+}
+
+.icon-astronaut::before {
+  background-image: url(../image/icon-astronaut.png);
 }
 
 .section_about_subtitle {
@@ -329,13 +387,16 @@ img {
   line-height: 1.62;
   text-align: center;
   color: var(--main_color);
-  background-color: #f5f4fa;
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 .portfolio_btn:hover,
 .portfolio_btn:focus {
   background-color: var(--active_color);
   color: var(--sub_color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio_list {
@@ -343,11 +404,11 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio_list .portfolio_gallery .portfolio_subtitle {
+.portfolio_gallery .portfolio_subtitle {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.portfolio_list .portfolio_gallery .portfolio_text {
+.portfolio_gallery .portfolio_text {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -355,6 +416,11 @@ img {
 
 .portfolio_gallery {
   width: calc((100% - 60px) / 3);
+}
+
+.portfolio_gallery:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio_subtitle {
