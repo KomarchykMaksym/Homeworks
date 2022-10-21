@@ -166,14 +166,16 @@ img {
 .main_section {
   width: 1600px;
   margin: 0 auto;
+  background: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/fone-hero.jpg);
-  padding-top: var(--typical_padding);
-  padding-bottom: var(--typical_padding);
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .main_section_title {
   font-weight: 900;
@@ -183,10 +185,14 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--sub_color);
-  margin-bottom: 30px;
+  width: 700px;
+  margin: 0 auto 30px;
 }
 
 .main_section_btn {
+  margin: 0 auto;
+  min-width: 216px;
+  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -198,10 +204,8 @@ img {
   color: var(--sub_color);
   background: var(--active_color);
   cursor: pointer;
-  margin: 0 auto;
-  min-width: 216px;
-  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
 }
 .main_section_btn:hover,
@@ -264,7 +268,6 @@ img {
 
 /* --------WORK----------------------- */
 .section_work {
-  padding-top: var(--typical_padding);
   padding-bottom: var(--typical_padding);
 }
 
@@ -288,8 +291,8 @@ img {
 
 /* --------TEAM----------------------- */
 .section_team {
-  padding-top: var(--typical_padding);
   padding-bottom: var(--typical_padding);
+  background: #f5f4fa;
 }
 
 .section_team_list {
@@ -313,13 +316,17 @@ img {
   margin-bottom: 50px;
 }
 
+.card_name {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .section_team_subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--main_color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -328,7 +335,7 @@ img {
   line-height: 1.19;
   text-align: center;
   color: var(--text_color);
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 /* --------TEAM----------------------- */
 /* --------FOOTER--------------------- */
@@ -350,11 +357,16 @@ img {
   font-weight: 400;
   line-height: 1.71;
   color: var(--sub_color);
+  margin-bottom: 9px;
 }
 
 .section_footer_map:hover,
 .section_footer_map:focus {
   color: var(--active_color);
+}
+
+.section_footer_mail {
+  margin-bottom: 9px;
 }
 
 .section_footer_mail,
@@ -381,6 +393,7 @@ img {
 }
 
 .portfolio_btn {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -404,11 +417,8 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio_gallery .portfolio_subtitle {
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
-.portfolio_gallery .portfolio_text {
+.gallery_name {
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -428,8 +438,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main_color);
-  padding-top: 20px;
-  padding-left: 24px;
   margin-bottom: 4px;
 }
 
@@ -437,8 +445,6 @@ img {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text_color);
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
 
 /* --------PORTFOLIO----------------- */
