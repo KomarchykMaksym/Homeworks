@@ -229,6 +229,7 @@ img {
   display: block;
   height: 120px;
   content: "";
+  margin-bottom: 30px;
   background-color: #f5f4fa;
   background-position: center;
   background-repeat: no-repeat;
