@@ -136,12 +136,12 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../image/icon-mail.png);
+  background-image: url(../image/icon-mail.svg);
   background-position: center;
   background-size: contain;
 }
 
-.header_tel::before {
+.header_tel:before {
   display: inline-block;
   content: "";
   width: 10px;
@@ -236,18 +236,18 @@ img {
 }
 
 .icon-antena::before {
-  background-image: url(../image/icon-antena.png);
+  background-image: url(../image/icon-antenna.svg);
 }
 .icon-clock::before {
-  background-image: url(../image/icon-clock.png);
+  background-image: url(../image/icon-clock.svg);
 }
 
 .icon-diagram::before {
-  background-image: url(../image/icon-diagram.png);
+  background-image: url(../image/icon-diagram.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(../image/icon-astronaut.png);
+  background-image: url(../image/icon-astronaut.svg);
 }
 
 .section_about_subtitle {
