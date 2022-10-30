@@ -72,7 +72,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header_container {
@@ -109,6 +109,10 @@ img {
   color: var(--main_color);
 }
 
+.contacts_icon {
+  fill: currentColor;
+}
+
 .header_list_link:hover,
 .header_list_link:focus {
   color: var(--active_color);
@@ -128,29 +132,10 @@ img {
   line-height: 1.13;
   letter-spacing: 0.02em;
   color: var(--text_color);
-}
-
-.header_mail:before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url(../image/icon-mail.svg);
-  background-position: center;
-  background-size: contain;
-}
-
-.header_tel:before {
-  display: inline-block;
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../image/icon-phone.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .header_mail:hover,
@@ -225,29 +210,15 @@ img {
   gap: 30px;
 }
 
-.section_about_item::before {
-  display: block;
+.about_container {
+  width: 270px;
   height: 120px;
-  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.icon-antena::before {
-  background-image: url(../image/icon-antenna.svg);
-}
-.icon-clock::before {
-  background-image: url(../image/icon-clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../image/icon-diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../image/icon-astronaut.svg);
 }
 
 .section_about_subtitle {
@@ -292,6 +263,7 @@ img {
 
 /* --------TEAM----------------------- */
 .section_team {
+  padding-top: var(--typical_padding);
   padding-bottom: var(--typical_padding);
   background: #f5f4fa;
 }
@@ -338,7 +310,82 @@ img {
   color: var(--text_color);
   margin-bottom: 16px;
 }
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social_link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+
+.social_link:hover,
+.social_link:focus {
+  background-color: var(--active_color);
+  color: var(--sub_color);
+}
+
+.social_icon {
+  fill: currentColor;
+}
+
 /* --------TEAM----------------------- */
+/* --------REGULAR CLIENTS------------ */
+.section_regular_clients {
+  padding-top: var(--typical_padding);
+  padding-bottom: var(--typical_padding);
+}
+
+.section_clients_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.regular_clients_list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients_link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #afb1b8;
+}
+
+.clients_icon {
+  fill: currentColor;
+}
+
+.clients_link:hover,
+.clients_link:focus {
+  border-color: var(--active_color);
+  color: var(--active_color);
+}
+
+/* --------REGULAR CLIENTS------------ */
 /* --------FOOTER--------------------- */
 
 .section_footer {
@@ -379,6 +426,40 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.social {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.social_title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer_social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer_social_icon {
+  fill: currentColor;
+}
+
+.footer_social:hover,
+.footer_social:focus {
+  background-color: var(--active_color);
+}
 /* --------FOOTER--------------------- */
 
 /* --------PORTFOLIO----------------- */
@@ -387,6 +468,7 @@ img {
   padding-bottom: var(--typical_padding);
 }
 .portfolio_filter {
+  margin-left: 200px;
   display: flex;
   justify-content: center;
   gap: 8px;
