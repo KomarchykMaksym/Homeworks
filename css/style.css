@@ -93,6 +93,11 @@ img {
 
 /* ========HEADER--------------------- */
 .header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  background: var(--sub_color);
   border-bottom: 1px solid #ececec;
 }
 
