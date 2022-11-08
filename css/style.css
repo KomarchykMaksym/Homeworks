@@ -200,6 +200,11 @@ img {
   margin-bottom: 30px;
 }
 
+.checkbox_icon {
+  width: 16px;
+  height: 15px;
+}
+
 .checkbox_label {
   font-weight: 400;
   font-size: 14px;

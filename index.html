@@ -83,7 +83,7 @@
       <label class="form_label">
         Ім'я
         <div class="input__wrapper">
-        <input class="modal_input" type="text" name="username" autofocus>
+        <input class="modal_input" type="text" name="username" autofocus required>
         <svg class="input_icon" widht="18" height="18">
           <use href="./image/symbol-defs.svg#icon-input_name"></use>
         </svg>
@@ -92,7 +92,7 @@
       <label class="form_label">
         Телефон
         <div class="input__wrapper">
-        <input class="modal_input" type="tel" name="phone_number">
+        <input class="modal_input" type="tel" name="phone_number" required>
         <svg class="input_icon" widht="18" height="18">
           <use href="./image/symbol-defs.svg#icon-input_tel"></use>
         </svg>
@@ -101,7 +101,7 @@
       <label class="form_label">
         Пошта
         <div class="input__wrapper">
-        <input class="modal_input" type="email" name="email">
+        <input class="modal_input" type="email" name="email" required>
         <svg class="input_icon" widht="18" height="18">
           <use href="./image/symbol-defs.svg#icon-input_mail"></use>
         </svg>
@@ -113,7 +113,10 @@
       </label>
       <label class="form_label">
         <div class="checkbox_container">
-        <input type="checkbox" name="terms">
+        <input class="visually-hidden" type="checkbox" name="terms">
+        <svg class="checkbox_icon" widht="16" height="15">
+          <use href="./image/symbol-defs.svg#icon-check"></use>
+        </svg>
         <p class="checkbox_label">
           Погоджуюся з розсилкою та приймаю 
           <a class="link" href="./index.html">
