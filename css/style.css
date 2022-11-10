@@ -200,10 +200,10 @@ img {
   margin-bottom: 30px;
 }
 
-.checkbox_icon {
+/* .checkbox_icon {
   width: 16px;
   height: 15px;
-}
+} */
 
 .checkbox_label {
   font-weight: 400;
@@ -625,6 +625,7 @@ img {
 .footer_container {
   display: flex;
   align-items: baseline;
+  justify-content: space-around;
 }
 
 .footer_link_logo {
