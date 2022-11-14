@@ -116,6 +116,7 @@ img {
   display: inline-flex;
   align-items: center;
   border-radius: 50%;
+  justify-content: center;
   cursor: pointer;
   color: var(--main_color);
   background: var(--sub_color);
@@ -123,6 +124,11 @@ img {
   position: absolute;
   fill: var(--main_color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close_icon {
+  width: 11px;
+  height: 11px;
 }
 
 .close_modal_btn:hover,
@@ -147,20 +153,20 @@ img {
 .form_label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--text_color);
-}
-.input__wrapper {
   position: relative;
   width: 448px;
 }
 
 .modal_input:hover,
-.modal_input:focus {
+.modal_feedback:hover,
+.modal_input:focus,
+.modal_feedback:focus {
   border-color: var(--active_color);
 }
 
@@ -170,6 +176,7 @@ img {
 }
 
 .modal_input {
+  margin-bottom: 10px;
   margin-top: 4px;
   padding: 11px 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -185,7 +192,7 @@ img {
   width: 18px;
   height: 18px;
   left: 2%;
-  top: 33%;
+  top: 50%;
 }
 
 .modal_feedback {
@@ -196,6 +203,8 @@ img {
   width: 448px;
   height: 120px;
   margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
 .form_check_label {
@@ -204,9 +213,6 @@ img {
   justify-content: center;
   gap: 8.38px;
   margin-bottom: 30px;
-}
-
-.checkbox_label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
