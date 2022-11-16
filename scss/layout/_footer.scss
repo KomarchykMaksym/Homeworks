@@ -1,0 +1,153 @@
+$color_1: var(--sub_color);
+$color_2: var(--active_color);
+$color_3: rgba(255, 255, 255, 0.6);
+$color_4: #ffffff;
+$font-family_1: inherit;
+$background-color_1: var(--active_color);
+
+.section_footer {
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer_container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.footer_link_logo {
+    display: inline-block;
+    color: $color_1;
+    margin-bottom: 20px;
+}
+
+.section_footer_map {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: $color_1;
+    margin-bottom: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: $color_2;
+    }
+
+    &:focus {
+        color: $color_2;
+    }
+}
+
+.section_footer_mail {
+    margin-bottom: 9px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $color_3;
+}
+
+.section_footer_tel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $color_3;
+}
+
+.social {
+    margin-left: 70px;
+}
+
+.subcribe {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $color_1;
+    margin-bottom: 20px;
+}
+
+.footer_social {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color_4;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: $background-color_1;
+    }
+
+    &:focus {
+        background-color: $background-color_1;
+    }
+}
+
+.footer_social_icon {
+    fill: currentColor;
+}
+
+.send_container {
+    margin-left: auto;
+}
+
+.send_label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $color_1;
+    margin-bottom: 20px;
+}
+
+.send {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.footer_submit_btn {
+    font-family: $font-family_1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    background: var(--active_color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $color_1;
+}
+
+.footer_input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: $color_3;
+    padding: 15px 16px;
+}
