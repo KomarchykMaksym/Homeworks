@@ -19,40 +19,40 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header_container">
-        <nav class="header_nav">
-          <a class="header_link_logo link logo" href="index.html"
+      <div class="container header__container">
+        <nav class="navigation">
+          <a class="link logo navigation__logo" href="index.html"
             ><span class="logo_color">Web</span>Studio</a
           >
-          <ul class="header_list">
-            <li class="header_list_item list">
-              <a class="header_list_link link current" href="./index.html"
+          <ul class="menu list">
+            <li class="menu__item">
+              <a class="menu__link link current" href="./index.html"
                 >Студія</a
               >
             </li>
-            <li class="header_list_item list">
-              <a class="header_list_link link" href="./portfolio.html"
+            <li class="menu__item">
+              <a class="menu__link link" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="header_list_item list">
-              <a class="header_list_link link" href="#contacts">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
-        <div class="header_contacts">
-          <ul class="header_contacts list header_list">
-            <li class="header_contacts_item">
-              <a class="header_mail link" href="mailto:info@devstudio.com">
-                <svg class="contacts_icon" width="16" height="12">
+        <div class="connect">
+          <ul class="menu list">
+            <li>
+              <a class="menu__mail link" href="mailto:info@devstudio.com">
+                <svg class="menu__icon" width="16" height="12">
                   <use href="./image/symbol-defs.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="header_contacts_item">
-              <a class="header_tel link" href="tel:+380961111111"
-                ><svg class="contacts_icon" width="10" height="16">
+            <li>
+              <a class="menu__tel link" href="tel:+380961111111"
+                ><svg class="menu__icon" width="10" height="16">
                   <use href="./image/symbol-defs.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -130,51 +130,51 @@
       </section>
       <section class="section_about">
         <div class="container">
-          <h2 class="section_about_title visually-hidden">Особливості</h2>
-          <ul class="section_about_list">
-            <li class="section_about_item list icon-antena">
-              <div class="about_container">
-                <svg class="about_icon" width="70" height="70">
+          <h2 class="visually-hidden">Особливості</h2>
+          <ul class="about__list list">
+            <li>
+              <div class="image__container">
+                <svg width="70" height="70">
                   <use href="./image/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="section_about_subtitle">Увага до деталей</h3>
-              <p class="section_about_text">
+              <h3 class="about__subtitle subtitle">Увага до деталей</h3>
+              <p class="about__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="section_about_item list icon-clock">
-              <div class="about_container">
-                <svg class="about_icon" width="70" height="70">
+            <li>
+              <div class="image__container">
+                <svg width="70" height="70">
                   <use href="./image/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="section_about_subtitle">Пунктуальність</h3>
-              <p class="section_about_text">
+              <h3 class="about__subtitle subtitle">Пунктуальність</h3>
+              <p class="about__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="section_about_item list icon-diagram">
-              <div class="about_container">
-                <svg class="about_icon" width="70" height="70">
+            <li>
+              <div class="image__container">
+                <svg width="70" height="70">
                   <use href="./image/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="section_about_subtitle">Планування</h3>
-              <p class="section_about_text">
+              <h3 class="about__subtitle subtitle">Планування</h3>
+              <p class="about__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="section_about_item list icon-astronaut">
-              <div class="about_container">
-                <svg class="about_icon" width="70" height="70">
+            <li>
+              <div class="image__container">
+                <svg width="70" height="70">
                   <use href="./image/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section_about_subtitle">Сучасні технології</h3>
-              <p class="section_about_text">
+              <h3 class="about__subtitle subtitle">Сучасні технології</h3>
+              <p class="about__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -184,34 +184,34 @@
       </section>
       <section class="section_work">
         <div class="container">
-          <h2 class="section_work_title">Чим ми займаємося</h2>
-          <ul class="section_work_list">
-            <li class="section_work_item list">
+          <h2 class="work__title title">Чим ми займаємося</h2>
+          <ul class="cards__list list">
+            <li class="cards__item">
               <img
                 class="section_work_image"
                 src="./image/work_img_1.jpg"
                 alt="Десктопні додатки"
                 width="370"
               />
-              <p class="img_text">Десктопні додатки</p>
+              <p class="cards__text">Десктопні додатки</p>
             </li>
-            <li class="section_work_item list">
+            <li class="cards__item">
               <img
                 class="section_work_image"
                 src="./image/work_img_2.jpg"
                 alt="Мобільні додатки"
                 width="370"
               />
-              <p class="img_text">Мобільні додатки</p>
+              <p class="cards__text">Мобільні додатки</p>
             </li>
-            <li class="section_work_item list">
+            <li class="cards__item">
               <img
                 class="section_work_image"
                 src="./image/work_img_3.jpg"
                 alt="Графіка"
                 width="370"
               />
-              <p class="img_text">Дизайнерські рішення</p>
+              <p class="cards__text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>

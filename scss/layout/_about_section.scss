@@ -1,14 +1,17 @@
+$color_1: var(--main_color);
+$color_2: var(--text_color);
+
 .section_about {
     padding-top: var(--typical_padding);
     padding-bottom: var(--typical_padding);
 }
 
-.section_about_list {
+.about__list {
     display: flex;
     gap: 30px;
 }
 
-.about_container {
+.image__container {
     width: 270px;
     height: 120px;
     display: flex;
@@ -19,17 +22,16 @@
     margin-bottom: 30px;
 }
 
-.section_about_subtitle {
+.about__subtitle {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--main_color);
-    margin-bottom: 10px;
+    color: $color_1;
 }
 
-.section_about_text {
+.about__text {
     font-size: 14px;
     line-height: 1.71;
-    color: var(--text_color);
+    color: $color_2;
     max-width: 270px;
 }
