@@ -13,6 +13,9 @@ $background-color_1: var(--active_color);
 .header__container {
     display: flex;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        justify-content: space-between; 
+    }
 }
 
 .navigation {
@@ -24,7 +27,16 @@ $background-color_1: var(--active_color);
     color: $color_1;
     margin-right: 93px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    @media screen and (min-width: 480px) {
+        margin-top: 16px;
+            margin-bottom: 16px;
+            margin-right: 93px;
+    }
+    @media screen and (min-width: 768px) {
+margin-top: 26px;
+    margin-bottom: 26px;
+    margin-right: 87px;
+    }
     &:hover {
         color: $color_2;
     }
@@ -42,6 +54,13 @@ $background-color_1: var(--active_color);
     display: flex;
     gap: 50px;
     align-items: center;
+    margin-left: auto;
+    @media screen and (min-width: 480px)  {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+         display: flex;   
+        }
 
     .menu__link.current {
         color: $color_2;
@@ -66,10 +85,6 @@ $background-color_1: var(--active_color);
     }
 }
 
-.menu__icon {
-    fill: currentColor;
-}
-
 .current {
     &::after {
         content: "";
@@ -84,19 +99,30 @@ $background-color_1: var(--active_color);
     }
 }
 
-.connect {
-    display: flex;
-    margin-left: auto;
-}
+.contacts{
+    display: none;
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+                @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            align-items: center;
+        }
+    }
 
-.menu__mail {
+.contacts__mail, .contacts__tel {
     font-weight: 500;
     line-height: 1.13;
     letter-spacing: 0.02em;
     color: $color_3;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -109,22 +135,6 @@ $background-color_1: var(--active_color);
     }
 }
 
-.menu__tel {
-    font-weight: 500;
-    line-height: 1.13;
-    letter-spacing: 0.02em;
-    color: $color_3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        color: $color_2;
-    }
-
-    &:focus {
-        color: $color_2;
-    }
+.contacts__icon {
+    fill: currentColor;
 }

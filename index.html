@@ -18,51 +18,61 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container header__container">
-        <nav class="navigation">
-          <a class="link logo navigation__logo" href="index.html"
-            ><span class="logo_color">Web</span>Studio</a
-          >
-          <ul class="menu list">
-            <li class="menu__item">
-              <a class="menu__link link current" href="./index.html"
-                >Студія</a
-              >
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="./portfolio.html"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="#contacts">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="connect">
-          <ul class="menu list">
-            <li>
-              <a class="menu__mail link" href="mailto:info@devstudio.com">
-                <svg class="menu__icon" width="16" height="12">
-                  <use href="./image/symbol-defs.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="menu__tel link" href="tel:+380961111111"
-                ><svg class="menu__icon" width="10" height="16">
-                  <use href="./image/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
+<header class="header">
+  <div class="container header__container">
+    <nav class="navigation">
+      <a class="navigation__logo link logo" href="index.html"><span class="logo_color">Web</span>Studio</a>
+      <ul class="menu list">
+        <li class="menu__item">
+          <a class="menu__link link current" href="./index.html">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#contacts">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+      <ul class="contacts list">
+        <li>
+          <a class="contacts__mail link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
+              <use href="./image/symbol-defs.svg#icon-mail"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="contacts__tel link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10" height="16">
+              <use href="./image/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </li>
+      </ul>
+  </div>
+  <div class="mobile_menu visually-hidden" >
+    <div class="mobile_menu__container">
+    <div class="mobile_menu__head">
+        <ul class="mob_menu list">
+          <li class="mob__item">
+            <a class="mob__link link current" href="./index.html">Студія</a>
+          </li>
+          <li class="mob__item">
+            <a class="mob__link link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mob__item">
+            <a class="mob__link link" href="#contacts">Контакти</a>
+          </li>
+        </ul>
       </div>
-    </header>
-    <main>
+      <div class="mobile_menu__footer">
+
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- <main>
       <section class="main_section">
         <div class="container">
           <h1 class="main_section_title">
@@ -132,7 +142,7 @@
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="about__list list">
-            <li>
+            <li class="about__item">
               <div class="image__container">
                 <svg width="70" height="70">
                   <use href="./image/symbol-defs.svg#icon-antenna"></use>
@@ -144,7 +154,7 @@
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="about__item">
               <div class="image__container">
                 <svg width="70" height="70">
                   <use href="./image/symbol-defs.svg#icon-clock"></use>
@@ -156,7 +166,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="about__item">
               <div class="image__container">
                 <svg width="70" height="70">
                   <use href="./image/symbol-defs.svg#icon-diagram"></use>
@@ -167,7 +177,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="about__item">
               <div class="image__container">
                 <svg width="70" height="70">
                   <use href="./image/symbol-defs.svg#icon-astronaut"></use>
@@ -219,8 +229,8 @@
       <section class="section_team">
         <div class="container">
           <h2 class="section_team_title">Наша команда</h2>
-          <ul class="section_team_list">
-            <li class="section_team_item list">
+          <ul class="section_team_list list">
+            <li class="section_team_item">
               <img
                 class="section_team_image"
                 src="./image/comand_1.jpg"
@@ -284,7 +294,7 @@
                 </ul>
               </div>
             </li>
-            <li class="section_team_item list">
+            <li class="section_team_item">
               <img
                 class="section_team_image"
                 src="./image/comand_2.jpg"
@@ -348,7 +358,7 @@
                 </ul>
               </div>
             </li>
-            <li class="section_team_item list">
+            <li class="section_team_item">
               <img
                 class="section_team_image"
                 src="./image/comand_3.jpg"
@@ -412,7 +422,7 @@
                 </ul>
               </div>
             </li>
-            <li class="section_team_item list">
+            <li class="section_team_item">
               <img
                 class="section_team_image"
                 src="./image/comand_4.jpg"
@@ -483,7 +493,7 @@
         <div class="container">
           <h2 class="section_clients_title">Постійні клієнти</h2>
           <ul class="regular_clients_list list">
-            <li>
+            <li class="clients_list_item">
               <a
                 class="clients_link link"
                 href="https://yayaco.ca/"
@@ -495,7 +505,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients_list_item">
               <a
                 class="clients_link link"
                 href="https://www.dolcegabbana.com/en/"
@@ -507,7 +517,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients_list_item">
               <a
                 class="clients_link link"
                 href="https://kyliecosmetics.com/en-us"
@@ -519,7 +529,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients_list_item">
               <a
                 class="clients_link link"
                 href="https://www.petersandfoster.com/"
@@ -531,7 +541,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients_list_item">
               <a
                 class="clients_link link"
                 href="https://www.givenchybeauty.com/int/en"
@@ -543,7 +553,7 @@
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients_list_item">
               <a
                 class="clients_link link"
                 href="https://www.dior.com/en_int/beauty"
@@ -561,12 +571,12 @@
     </main>
     <footer class="section_footer">
       <div class="container footer_container">
-        <div>
+        <div class="address_container">
           <a class="footer_link_logo link logo" href="index.html"
             ><span class="logo_color">Web</span>Studio</a
           >
-          <address id="contacts" class="section_footer_address">
-            <ul class="section_footer_list list">
+          <address id="contacts">
+            <ul class="footer_address list">
               <li class="section_footer_item">
                 <a
                   class="section_footer_map link"
@@ -656,5 +666,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile_menu.js"></script> -->
   </body>
 </html>
